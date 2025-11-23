@@ -1,209 +1,373 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.button, .btn, .try-btn {
-    display: inline-block;
-    padding: 12px 22px;
-    background: #00bf63;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
+body {
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-/* Header Section */
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----Header---- */
 .header-area {
-    padding-bottom: 40px;
+  width: 100%;
+  background: #F3FCF7;
+  padding: 20px 0;
+  border-bottom: 1px solid #F3FCF7;
 }
 
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
+  color: #00a651;
 }
 
 .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 35px;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 500;
+  color: #111;
+  font-weight: 500;
 }
 
+.nav-menu a:hover,
+.nav-home {
+  color: #00a651;
+}
 
-/* Hero section */
+/* ----Hero Section---- */
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
-    padding-top: 40px;
-} 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+  background: #F3FCF7;
+}
+
+.hero-text {
+  width: 50%;
+}
 
 .hero-text h2 {
-    font-size: 48px;
-    font-weight: 800;
+  font-size: 55px;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 .hero-text p {
-    margin: 18px 0;
-    max-width: 400px;
+  margin: 15px 0 25px 0;
+  width: 75%;
 }
 
+.button {
+  background: #00a651;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+}
 
-/* Brand Section */
+.hero-image {
+  width: 45%;
+}
+
+/* ----Brand Logos---- */
 .brands-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  width: 85%;
+  opacity: 0.6;
 }
 
+.brands-container img {
+  width: 25px;
+  margin-right: 8px;
+}
 
-/* Feature Section */
+/* ----Feature Boxes---- */
 .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  margin: 60px auto;
 }
 
 .feature-box {
-    text-align: center;
+  width: 23%;
+  padding: 20px 10px;
+}
+
+.feature-box img {
+  width: 45px;
 }
 
 .feature-box h3 {
-    margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-
-/* Healthy section */
+/* ----Healthy Food Section---- */
 .healthy {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto;
 }
 
+.healthy-img {
+  width: 45%;
+}
 
-/* Star section */
+.healthy-text {
+  width: 50%;
+}
+
+.healthy-text h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.checklist li {
+  margin: 12px 0;
+  font-size: 17px;
+}
+
+/* ----Star Section---- */
 .star-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  background: #f6fff7;
+  padding: 60px;
+  margin: 80px 0;
+  border-radius: 12px;
+}
+
+.star-text {
+  width: 50%;
+}
+
+.star-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .star-box {
-    display: flex;
-    gap: 30px;
-    margin: 20px 0;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 25px;
 }
 
+.star-box div strong {
+  font-size: 28px;
+  color: #06C167;
+}
 
-/* Variety food section */
+.btn {
+  background: #06C167;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.star-image {
+  width: 45%;
+}
+
+/* -----Variety of Foods----- */
+.variety-food .title {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px 0;
+}
+
 .variety-food-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
 .variety-food-box {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
+  background: #fff;
+  padding-bottom: 20px;
 }
 
 .variety-food-box h3 {
-    margin: 15px 0;
+  margin-top: 12px;
 }
 
 .link {
-    color: #00bf63;
-    text-decoration: none;
-    font-weight: 600;
+  color: #06C167;
+  font-weight: 600;
 }
 
+/* ----popular Products---- */
+.popular-product{
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-/* Popular section */
 .popular-product-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
 .popular-product-box {
-    text-align: center;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
 }
 
-.popular-product-box p {
-    margin: 10px 0;
+.popular-product-box img {
+  width: 150px;
+  margin: auto;
 }
 
+.popular-product-box del {
+  opacity: 0.6;
+}
 
-/* Try section */
+/* ----Try Section----*/
 .try-container {
-    text-align: center;
-    position: relative;
+  position: relative;
+  text-align: center;
+}
+
+.try-image {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .try-text {
-    margin: 20px 0;
-    font-size: 32px;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  font-size: 45px;
+  color: #fff;
 }
 
-
-/* Footer Section */
-.footer {
-    background: #f0f0f0;
-    padding: 60px 0;
+.try-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #06C167;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
-.footer-containaer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
+/* ----Footer Section----*/
+.footer-area {
+  background: #f2f2f2;
+  padding: 50px 0;
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
 .footer-title {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.footer-menu li {
-    margin: 10px 0;
-    list-style: none;
-}
-
-.footer-menu a {
-    color: #333;
-    text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
 .footer-box-social a {
-    margin-right: 10px;
-    color: #333;
-    font-size: 18px;
+  margin-right: 10px;
+  color: #06C167;
+  font-size: 18px;
+}
+
+.footer-menu li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.subscribe-button {
+  background: #06C167;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .features,
+  .healthy,
+  .star-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .variety-food-container,
+  .popular-product-container,
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .variety-food-container,
+  .popular-product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .try-text {
+    font-size: 30px;
+  }
 }
